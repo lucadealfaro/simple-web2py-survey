@@ -1,0 +1,9 @@
+static/
+cache/
+languages/
+databases/
+errors/
+sessions/
+*~
+*.bak
+

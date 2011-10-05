@@ -1,0 +1,11 @@
+{{extend 'layout.html'}}
+<h1>{{=question.title}}</h1>
+<p>Code: {{=question.code}}</p>
+<p>Created: {{=question.creation_date}}</p>
+
+<h2>Answers</h2>
+<table>
+{{for a in answers:}}
+{{=TR(TD(a.text))}}
+{{pass}}
+</table>

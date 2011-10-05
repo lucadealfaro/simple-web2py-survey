@@ -1,0 +1,8 @@
+{{extend 'layout.html'}}
+<h1>Survey questions asked</h1>
+<ul>
+{{for q in questions:}}
+{{=LI(A(q.title, _href=URL('view_question', args=[q.id])), ' (', q.code, ')')}}
+{{pass}}
+</ul>
+{{=A('Create a new survey question', _href=URL('create_question'))}}

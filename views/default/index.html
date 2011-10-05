@@ -1,0 +1,7 @@
+{{extend 'layout.html'}}
+
+<h1>Welcome!</h1>
+<ul>
+{{=LI(A("Access this site as a professor", _href=URL('professor_index')))}}
+{{=LI(A("Access this site as a student", _href=URL('student_index')))}}
+</ul>
